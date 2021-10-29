@@ -415,7 +415,7 @@ nav{ width: 60%; }
   display: inline-block;
   position: absolute;
   font-size: 20px;
-  top: 22px;
+  top: 19px;
   left: 17px;
 }
 
@@ -454,9 +454,6 @@ nav{ width: 60%; }
   bottom: -59px;
 }
 
-
-
-
 /*=================================
   main styling ends here
 =================================*/
@@ -465,10 +462,36 @@ nav{ width: 60%; }
   footer styling starts here
 =================================*/ 
 
-footer{ background: #000000; }
+footer{ 
+  background: #000000; 
+  padding: 0 0 23px 0;
+  margin-bottom: 4px;
+}
 
+footer .social-list li:first-of-type{ transform: translate(0, 0); }
+footer .social-list li{ margin: 5px 0 0 0 ; }
 
+.footer-nav{
+  width: 60%;
+  margin-left: 40%;
+}
 
+footer .wrapper{ 
+  width: 71%;
+  padding: 16px 0 18px 0;
+  color: #fdfdfd;
+}
+
+footer a{
+  color: #fdfdfd;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+footer p{ 
+  transform: translateY(24px);
+  font-size: 9.8px; 
+}
 
 
  /*=================================
