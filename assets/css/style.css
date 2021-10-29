@@ -106,6 +106,139 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header{ 
+  background-color: rgba(0,0,0,0.5); 
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+header .wrapper{
+  width: 71%;
+  padding: 16px 0 18px 0;
+}
+
+.pre-nav{ 
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.language{
+  font-size: 11px;
+  display: flex;
+}
+
+.language a { color: #fdfdfd; }
+.search-box input:focus{ outline: none; }
+
+.search-box {
+  background-color: #6d6e72; 
+  font-size: 10px;
+  width: 53%;
+}
+
+.search-box input{
+  background-color: transparent;
+  border: none;
+  width: 85%;
+  font-size: 11px;
+  padding: 2px 5%;
+  color: #fdfdfd;
+  height: auto;
+}
+
+.search-btn{
+  color: #fdfdfd;
+  font-size: 11px;
+  text-indent: -999999999px;
+  position: relative;
+  float: right;
+}
+
+.search-btn::after{
+  content: "\f002";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  text-indent: 0;
+}
+
+.language li:first-of-type::after{
+  content: "|";
+  margin: 0 3px;
+  color: #fdfdfd;
+}
+
+h1{ transform: translateX(-4px); }
+.social-list{ font-size: 18px; }
+
+.social-list li{
+  position: relative;
+  z-index: 1;
+}
+
+.social-list li:first-of-type{ transform: translate(47%, -1px); }
+
+nav{ width: 60%; }
+
+.language{  
+  position: absolute;
+  top: 5px;
+  right: 22%;
+}
+
+.nav-block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list{ 
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list li{ 
+  padding: 0 0 0 2.6%;
+  position: relative;
+}
+
+.nav-block a{
+  color: #fdfdfd;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.nav-list li::after{
+  position: absolute;
+  left: 5px;
+  content: "|";
+  color: #fdfdfd;
+}
+
+.nav-list li:nth-child(1)::after,
+.nav-list li:nth-child(2)::after{ content: none; }
+
+.home-icon{
+  position: relative;
+  text-indent: -9999999999px;
+}
+
+.home-icon::after{
+  position: absolute;
+  left: -21px;
+  top: -2px;
+  font-size: 18px;
+  text-indent: 0;
+  content: "\f015";
+  font-family: FontAwesome;
+}
+
+
+
+
 
 
 
