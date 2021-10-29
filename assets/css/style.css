@@ -328,6 +328,133 @@ nav{ width: 60%; }
   right: 42.2vw;
 }
 
+.products .wrapper{ width: 66.3%; }
+
+.product-list{
+  transform: translateX(-1px);
+  margin: 36px 0 61px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-details{ 
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  text-transform: uppercase;
+  color: #fdfdfd;
+  cursor: pointer;
+}
+
+.product-details:hover{
+  color: #b11670;
+  background-color: rgba(0,0,0,0.3);
+} 
+
+.product-half-width .product-details{ padding: 0 0 0 0; }
+
+.product-half-width p{
+  text-align: center;
+  margin: 22% 0 0 0;
+  font-weight: bold;
+}
+
+.product-half-width p::after{
+  content: "\2000\f101";
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+
+.product{ 
+  position: relative;
+  width: 32.40%;
+  margin: 0 1.34% 1.34% 0;
+  font-size: 33px;
+}
+
+.product-half-width{ 
+  width: 66.26%;
+  margin: 0 0 1.34% 0;
+  font-size: 16px;
+}
+
+.product:nth-last-of-type(2){ margin: 0 0 1.34% 0;}
+.product:nth-last-of-type(1){ margin: 0 0 0 0;}
+.product-full-width{ width: 100%; }
+.product-full-width:hover::after{ color: #b11670; }
+
+.product-full-width::after{
+  content: "\2000\f101";
+  font-family: "FontAwesome";
+  font-size: 23px;
+  position: absolute;
+  right: 4.3%;
+  bottom: 30px;
+  color: #fdfdfd;
+}
+
+.product-full-width::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; 
+	height: 0; 
+	border-left: 58px solid #000000;
+	border-right: 58px solid transparent;
+	border-top: 58px solid #000000;
+  border-bottom: 58px solid transparent;
+	font-size: 0;
+	line-height: 0;
+}
+
+.product-full-width p{
+  transform: rotate(-45deg);
+  display: inline-block;
+  position: absolute;
+  font-size: 20px;
+  top: 22px;
+  left: 17px;
+}
+
+.product p{ 
+  font-weight: 100;
+  padding: 0 5% 0 11.5%;
+  line-height: 45px;
+  position: relative;
+}
+
+.product-full-width .product-details p:first-of-type{ padding: 0 0 0 0; }
+.product-half-width .product-details p:first-of-type{ padding: 0 0 0 0; }
+.product:first-of-type p:first-of-type{ padding: 58px 11.5% 0 13.5%; }
+.product:first-of-type p{ padding: 0 5% 0 13.5%; }
+.product p:first-of-type{  padding: 53px 11.5% 0 11.5%; }
+.product p:last-of-type{ font-weight: 600; }
+
+.arrow-log::after{
+  content: "\f101";
+  font-family: "FontAwesome";
+  position: absolute;
+  font-size: 20px;
+  bottom: -59px;
+  font-size: 22px;
+}
+
+.product:first-of-type .arrow-log:nth-of-type(2):after{
+  left: 16.5%;
+  bottom: -48px;
+}
+
+.product:nth-of-type(4) .arrow-log::after{ left: 14%; }
+
+.arrow-log:last-of-type:after{
+  left: 15.5%;
+  bottom: -59px;
+}
+
+
 
 
 /*=================================
@@ -338,7 +465,7 @@ nav{ width: 60%; }
   footer styling starts here
 =================================*/ 
 
-
+footer{ background: #000000; }
 
 
 
