@@ -110,6 +110,7 @@ header{
   background-color: rgba(0,0,0,0.5); 
   position: absolute;
   top: 0;
+  z-index: 5;
   width: 100%;
 }
 
@@ -236,15 +237,6 @@ nav{ width: 60%; }
   font-family: FontAwesome;
 }
 
-
-
-
-
-
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -253,10 +245,88 @@ nav{ width: 60%; }
   main styling starts here
 =================================*/
 
+.slider-container{
+  background-color: black;
+  padding: 9px 0 0 0;
+}
 
+.slider-container .wrapper{
+  width: 100%;
+  position: relative;
+}
 
+.slider{ 
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
 
+.slide{ display: none; }
+.slide:first-of-type{ display: block; }
 
+.slider-dots{
+  position: absolute;
+  margin: 0 0 0 50%;
+  transform: translateX(-50%);
+  bottom: 5.1%;
+}
+
+.slider-dot{
+  display: inline-block;
+  position: relative;
+  font-size: 12.5px;
+  margin: 0 10px 0 3px;
+  color: #fdfdfd;
+  text-indent: -9999999999px;
+}
+
+.slider-dot::after{
+  text-indent: 0;
+  position: absolute;
+  font-family: "FontAwesome";
+  content: "\f10c";
+  color: #fdfdfd;
+  z-index: 2;
+  left: 0;
+}
+
+.slider-dot:hover::after,
+.active-dot::after{ content: "\f111"; }
+
+.slider-controls{
+  position: absolute;
+  margin: 0 0 0 50%;
+  top: 40%;
+  transform: translate(-50%, 0);
+  width: 70%;
+}
+
+.slider-controls a{
+  position: absolute;
+  left: 50%;
+  color: #fdfdfd;
+  text-indent: -999999999999px;
+  font-size: 87px;
+}
+
+.slider-controls a::after{
+  top: 74%;
+  text-indent: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  font-family: FontAwesome;
+}
+
+.next-btn::after{ 
+  content: "\f105";
+  left: 42.4vw;
+}
+
+.privious-btn::after{ 
+  content: "\f104"; 
+  right: 42.2vw;
+}
 
 
 
