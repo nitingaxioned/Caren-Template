@@ -262,9 +262,6 @@ nav{ width: 60%; }
   flex-wrap: nowrap;
 }
 
-.slide{ display: none; }
-.slide:first-of-type{ display: block; }
-
 .slider-dots{
   position: absolute;
   margin: 0 0 0 50%;
@@ -293,6 +290,7 @@ nav{ width: 60%; }
 
 .slider-dot:hover::after,
 .active-dot::after{ content: "\f111"; }
+.hide-slide{ display:none; }
 
 .slider-controls{
   position: absolute;
