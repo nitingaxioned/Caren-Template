@@ -635,6 +635,7 @@ a:hover{ color: #b11670; }
     top: 18px;
     color: #fdfdfd;
     right: 2.5%;
+    cursor: pointer;
   }
 
   .active-nav::after{
