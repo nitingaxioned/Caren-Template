@@ -253,13 +253,19 @@ nav{ width: 60%; }
 .slider-container .wrapper{
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .slider{ 
   display: flex;
-  justify-content: center;
-  overflow: hidden;
   flex-wrap: nowrap;
+}
+
+.slide{ min-width: 100%; }
+
+.slider{
+  transform: translateX(0);
+  transition: all 0.7s ease-in-out;
 }
 
 .slider-dots{
